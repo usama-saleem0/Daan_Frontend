@@ -1,0 +1,1048 @@
+@import url("https://fonts.googleapis.com/css2?family=Doppio+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Solway:wght@300;400;500;700;800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Doppio+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Solway:wght@300;400;500;700;800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+.dashboard-section-ar {
+  width: 100%;
+}
+.dashboard-inner-ar {
+  display: flex;
+  align-items: flex-start;
+  height: 100vh;
+}
+.sidebar-ar {
+  width: 25%;
+  box-shadow: 0 4px 14px #00000025;
+  padding: 30px;
+  margin: 0;
+  height: 100%;
+  overflow: auto;
+
+  /* Webkit scrollbar styles */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Webkit scrollbar styling for browsers like Chrome, Safari */
+
+.rightbar-ar {
+  width: 75%;
+  height: 100%;
+  overflow: auto;
+  /* scrollbar-width: thin;
+  scrollbar-color: transparent transparent; */
+}
+.rightbar-ar::-webkit-scrollbar {
+  width: 0px !important; /* Width of the scrollbar */
+  border-radius: 50px;
+  background-color: #fff; /* Background of the scrollbar path */
+}
+
+.rightbar-ar::-webkit-scrollbar-thumb {
+  border-radius: 50px; /* Roundness of the scroller */
+  background-color: #5d6d7e !important; /* Color of the scroller */
+}
+
+.rightbar-ar::-webkit-scrollbar-thumb:hover {
+  background-color: #4a5867 !important; /* Darker shade for hover effect */
+}
+.siebar-top-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.head-btn-ar {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #f39c12;
+  padding: 13px 0px;
+  font-size: 20px;
+  color: #f39c12;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50px;
+  width: 50%;
+}
+.active-heading-btn {
+  background-color: #f39c12;
+  color: #fff;
+}
+.sidebar-bottom-chapters-div-ar h3 {
+  font-size: 40px;
+  color: #000;
+  font-family: "Solway", serif;
+  font-weight: 500;
+  padding-top: 77px;
+  border-bottom: 3px solid #000;
+  padding-bottom: 3px;
+  width: max-content;
+}
+.sidebar-bottom-chapters-div-ar h5 {
+  font-size: 35px;
+  color: #000;
+  font-family: "Solway", serif;
+  font-weight: 500;
+  padding-top: 77px;
+  text-align: center;
+}
+.chapters-name-div-ar {
+  padding-top: 96px;
+}
+.sample-book-divs-ar {
+  padding-left: 40px;
+}
+.chapters-name-div-ar h4 {
+  font-size: 25px;
+  color: #000;
+  font-family: "Solway", serif;
+  font-weight: 500;
+  padding-bottom: 30px;
+  cursor: pointer;
+  text-indent: -47px;
+}
+.chapter-name-active {
+  color: #f39c12 !important;
+}
+.right-hs-ar {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 14px;
+  overflow: auto;
+}
+
+.right-hs-ar button {
+  border-radius: 50px;
+  border: 2px solid #f39c12;
+  padding: 10px 40px;
+  font-size: 18px;
+  color: #f39c12;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background-color: #fff;
+}
+.right-below-ar {
+  padding: 23px 30px;
+}
+.chap-heading-ar {
+  width: 100%;
+  background-color: #cdacdb;
+  color: #000;
+  font-size: 40px;
+  font-family: "Solway", serif;
+  font-weight: 500;
+  padding: 23px 10px;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0 4px 14px #00000025;
+}
+.chat-message-btn-div-ar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 38px;
+}
+.chat-ar {
+  border-radius: 50px;
+  padding: 30px;
+  width: 100%;
+  box-shadow: 0 4px 14px #00000025;
+  /* min-height: 535px; */
+  overflow: auto;
+  height: 49vh;
+}
+.user-chat-ar {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.user-chat-ar-div {
+  background-color: #ebebeb;
+  border-radius: 50px;
+  padding: 16px 20px;
+  font-size: 25px;
+  font-family: "Solway", serif;
+  font-weight: 500;
+  text-align: center;
+  width: 70%;
+  margin-right: 0;
+}
+/* width */
+.chat-ar::-webkit-scrollbar {
+  margin-right: 50px;
+  width: 0px;
+}
+
+.chat-ar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.chat-ar::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.message-div-ar {
+  width: 100%;
+  width: 100%;
+  box-shadow: 0 4px 14px #00000025;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  padding: 30px 100px 30px 30px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.input-outer-div {
+  width: 100%;
+  position: relative;
+}
+.voice-img-div {
+  position: absolute;
+  right: 3.5%;
+  top: 29%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.voice-img {
+  width: 30px;
+  cursor: pointer;
+}
+.voice-img img {
+  width: 100%;
+}
+.chat-send-btn-ar {
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  cursor: pointer;
+}
+.btns-div-ar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* margin: 0; */
+  justify-content: space-between;
+}
+.chat-blow-btn-ar {
+  color: #f39c12;
+  border: 1px solid #f39c12;
+  padding: 10px 45px;
+  background-color: #fff;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border-radius: 70px;
+  margin: 0;
+}
+.sample-book-sidebar-btns-ar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: -20px;
+}
+.sample-book-sidebar-btns-ar button {
+  color: #fff;
+  padding: 18px 0px;
+  background-color: #f39c12;
+  font-size: 25px;
+  font-family: "Solway", serif;
+  font-weight: 500;
+  border-radius: 50px;
+  margin: 0;
+  cursor: pointer;
+  border: none;
+}
+.sample-book-active-ar {
+  background-color: #000 !important;
+  color: #f39c12 !important;
+}
+.preview-book-div-ar {
+  padding: 30px;
+}
+.preview-book-div-ar h6 {
+  font-size: 40px;
+  font-family: "Solway", serif;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 30px;
+}
+.preview-book-detail-ar {
+  box-shadow: 0 4px 14px #00000025;
+  border-radius: 50px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  background-color: #f9f9f9;
+  padding-top: 100px;
+  /* max-height: 815px; */
+  height: 85vh;
+  overflow-y: auto !important;
+}
+
+.book-detail-div-ar {
+  width: 70%;
+  background-color: #fff;
+  padding: 30px 43px 0 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  overflow: auto;
+}
+.cover-img-div {
+  width: 100% !important;
+  height: 500px !important;
+  padding-bottom: 30px !important;
+}
+.cover-img-div img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.book-detail-div-ar::-webkit-scrollbar {
+  width: 30px !important; /* Width of the scrollbar */
+  border-radius: 50px;
+  background-color: #fff; /* Background of the scrollbar path */
+  margin-right: 50px !important;
+}
+
+.book-detail-div-ar::-webkit-scrollbar-thumb {
+  border-radius: 50px; /* Roundness of the scroller */
+  background-color: #5d6d7e !important; /* Color of the scroller */
+}
+
+.book-detail-div-ar::-webkit-scrollbar-thumb:hover {
+  background-color: #4a5867 !important; /* Darker shade for hover effect */
+}
+
+.book-detail-div-ar h1 {
+  font-size: 40px;
+  font-family: "Solway", serif;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 30px;
+}
+.book-content-ar {
+  width: 100%;
+  padding-bottom: 60px;
+}
+.book-content-ar p {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  /* text-align: center; */
+  margin: 0;
+  padding-bottom: 30px;
+}
+.visual-btn-ar {
+  background-color: #5d6d7e;
+  width: 40%;
+  padding: 53px 0;
+  border: none;
+  font-size: 40px;
+  font-family: "Solway", serif;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
+
+@media screen and (max-width: 1600px) {
+  .dashboard-inner-ar {
+    height: 100vh;
+  }
+  .sidebar-ar {
+    width: 28%;
+    padding: 28px;
+  }
+
+  /* Webkit scrollbar styling for browsers like Chrome, Safari */
+
+  .rightbar-ar {
+    width: 72%;
+  }
+  .siebar-top-div {
+    gap: 10px;
+  }
+  .head-btn-ar {
+    border-radius: 20px;
+    padding: 13px 0px;
+    font-size: 17px;
+    border-radius: 50px;
+  }
+  .sidebar-bottom-chapters-div-ar h3 {
+    font-size: 35px;
+    padding-top: 72px;
+    padding-bottom: 3px;
+  }
+  .sidebar-bottom-chapters-div-ar h5 {
+    font-size: 30px;
+    padding-top: 77px;
+  }
+  .chapters-name-div-ar {
+    padding-top: 90px;
+  }
+  .sample-book-divs-ar {
+    padding-left: 40px;
+  }
+  .chapters-name-div-ar h4 {
+    font-size: 21px;
+    padding-bottom: 30px;
+    text-indent: -36px;
+  }
+  .right-hs-ar {
+    padding: 28px;
+    gap: 13px;
+    overflow: auto;
+  }
+
+  .right-hs-ar button {
+    border-radius: 45px;
+    padding: 9px 38px;
+    font-size: 16px;
+  }
+  .right-below-ar {
+    padding: 21px 28px;
+  }
+  .chap-heading-ar {
+    font-size: 35px;
+    padding: 18px 10px;
+    border-radius: 48px;
+  }
+  .chat-message-btn-div-ar {
+    gap: 28px;
+    padding-top: 34px;
+  }
+  .chat-ar {
+    border-radius: 48px;
+    padding: 28px;
+    height: 57vh;
+  }
+
+  .user-chat-ar {
+    margin-bottom: 30px;
+  }
+
+  .user-chat-ar-div {
+    border-radius: 48px;
+    padding: 15px 19px;
+    font-size: 21px;
+    width: 70%;
+  }
+  .message-div-ar {
+    border-radius: 48px;
+    padding: 24px 90px 24px 24px;
+    font-size: 15px;
+  }
+
+  .voice-img {
+    width: 28px;
+  }
+  .voice-img-div {
+    gap: 10px;
+  }
+
+  .chat-send-btn-ar {
+    font-size: 25px;
+  }
+  .chat-blow-btn-ar {
+    padding: 9px 42px;
+    font-size: 18px;
+    border-radius: 60px;
+  }
+  .sample-book-sidebar-btns-ar {
+    gap: 28px;
+    margin-top: -18px;
+  }
+  .sample-book-sidebar-btns-ar button {
+    padding: 15px 0px;
+    font-size: 20px;
+    border-radius: 48px;
+  }
+  .preview-book-div-ar {
+    padding: 28px;
+  }
+  .preview-book-div-ar h6 {
+    font-size: 35px;
+    padding-bottom: 25px;
+  }
+  .preview-book-detail-ar {
+    border-radius: 48px;
+    padding-top: 100px;
+    height: 87vh;
+  }
+  .preview-book-detail-ar::-webkit-scrollbar {
+    width: 50px; /* Width of the scrollbar */
+    border-radius: 50px;
+    background-color: #fff; /* Background of the scrollbar path */
+  }
+
+  .preview-book-detail-ar::-webkit-scrollbar-thumb {
+    border-radius: 50px; /* Roundness of the scroller */
+    background-color: #5d6d7e; /* Color of the scroller */
+  }
+
+  .preview-book-detail-ar::-webkit-scrollbar-thumb:hover {
+    background-color: #4a5867; /* Darker shade for hover effect */
+  }
+  .book-detail-div-ar {
+    width: 70%;
+    padding: 28px 40px 0 40px;
+  }
+  .cover-img-div {
+    width: 100% !important;
+    height: 450px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .book-detail-div-ar::-webkit-scrollbar {
+    width: 25px !important; /* Width of the scrollbar */
+    border-radius: 50px;
+  }
+
+  .book-detail-div-ar::-webkit-scrollbar-thumb {
+    border-radius: 50px; /* Roundness of the scroller */
+  }
+
+  .book-detail-div-ar h1 {
+    font-size: 35px;
+  }
+  .book-content-ar {
+    padding-bottom: 55px;
+  }
+  .book-content-ar p {
+    font-size: 18px;
+    padding-bottom: 26px;
+  }
+  .visual-btn-ar {
+    width: 40%;
+    padding: 50px 0;
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .dashboard-inner-ar {
+    height: 100vh;
+  }
+  .sidebar-ar {
+    width: 30%;
+    padding: 26px;
+  }
+
+  /* Webkit scrollbar styling for browsers like Chrome, Safari */
+
+  .rightbar-ar {
+    width: 70%;
+  }
+  .siebar-top-div {
+    gap: 10px;
+  }
+  .head-btn-ar {
+    padding: 10px 0px;
+    font-size: 15px;
+    border-radius: 46px;
+  }
+  .sidebar-bottom-chapters-div-ar h3 {
+    font-size: 28px;
+    padding-top: 65px;
+    padding-bottom: 3px;
+  }
+  .sidebar-bottom-chapters-div-ar h5 {
+    font-size: 26px;
+    padding-top: 70px;
+  }
+  .chapters-name-div-ar {
+    padding-top: 85px;
+  }
+  .sample-book-divs-ar {
+    padding-left: 40px;
+  }
+  .chapters-name-div-ar h4 {
+    font-size: 20px;
+    padding-bottom: 26px;
+    text-indent: -36px;
+  }
+  .right-hs-ar {
+    padding: 26px;
+    gap: 11px;
+    overflow: auto;
+  }
+
+  .right-hs-ar button {
+    border-radius: 40px;
+    padding: 7px 32px;
+    font-size: 15px;
+  }
+  .right-below-ar {
+    padding: 19px 26px;
+  }
+  .chap-heading-ar {
+    font-size: 28px;
+    padding: 16px 8px;
+    border-radius: 46px;
+  }
+  .chat-message-btn-div-ar {
+    gap: 26px;
+    padding-top: 30px;
+  }
+  .chat-ar {
+    border-radius: 46px;
+    padding: 26px;
+    height: 62vh;
+  }
+  .user-chat-ar {
+    margin-bottom: 30px;
+  }
+
+  .user-chat-ar-div {
+    border-radius: 44px;
+    padding: 14px 17px;
+    font-size: 20px;
+    width: 70%;
+  }
+  .message-div-ar {
+    border-radius: 46px;
+    padding: 22px 80px 22px 22px;
+    font-size: 14px;
+  }
+
+  .voice-img {
+    width: 26px;
+  }
+  .voice-img-div {
+    gap: 10px;
+  }
+
+  .chat-send-btn-ar {
+    font-size: 25px;
+  }
+  .chat-blow-btn-ar {
+    padding: 8px 38px;
+    font-size: 16px;
+    border-radius: 50px;
+  }
+  .sample-book-sidebar-btns-ar {
+    gap: 26px;
+    margin-top: -20px;
+  }
+  .sample-book-sidebar-btns-ar button {
+    padding: 13px 0px;
+    font-size: 19px;
+    border-radius: 46px;
+  }
+  .preview-book-div-ar {
+    padding: 26px;
+  }
+  .preview-book-div-ar h6 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .preview-book-detail-ar {
+    border-radius: 46px;
+    padding-top: 90px;
+    height: 88vh;
+  }
+  .preview-book-detail-ar::-webkit-scrollbar {
+    width: 50px; /* Width of the scrollbar */
+    border-radius: 50px;
+    background-color: #fff; /* Background of the scrollbar path */
+  }
+
+  .preview-book-detail-ar::-webkit-scrollbar-thumb {
+    border-radius: 50px; /* Roundness of the scroller */
+    background-color: #5d6d7e; /* Color of the scroller */
+  }
+
+  .preview-book-detail-ar::-webkit-scrollbar-thumb:hover {
+    background-color: #4a5867; /* Darker shade for hover effect */
+  }
+  .book-detail-div-ar {
+    width: 70%;
+    padding: 26px 35px 0 35px;
+  }
+  .cover-img-div {
+    width: 100% !important;
+    height: 400px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .book-detail-div-ar::-webkit-scrollbar {
+    width: 20px !important; /* Width of the scrollbar */
+    border-radius: 50px;
+  }
+
+  .book-detail-div-ar::-webkit-scrollbar-thumb {
+    border-radius: 50px; /* Roundness of the scroller */
+  }
+  .book-detail-div-ar h1 {
+    font-size: 30px;
+  }
+  .book-content-ar {
+    padding-bottom: 50px;
+  }
+  .book-content-ar p {
+    font-size: 16px;
+    padding-bottom: 24px;
+  }
+  .visual-btn-ar {
+    width: 40%;
+    padding: 46px 0;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .dashboard-inner-ar {
+    height: 100vh;
+  }
+  .sidebar-ar {
+    width: 30%;
+    padding: 26px;
+  }
+
+  /* Webkit scrollbar styling for browsers like Chrome, Safari */
+
+  .rightbar-ar {
+    width: 70%;
+  }
+  .siebar-top-div {
+    gap: 8px;
+  }
+  .head-btn-ar {
+    padding: 9px 0px;
+    font-size: 14px;
+    border-radius: 44px;
+  }
+  .sidebar-bottom-chapters-div-ar h3 {
+    font-size: 28px;
+    padding-top: 60px;
+    padding-bottom: 3px;
+  }
+  .sidebar-bottom-chapters-div-ar h5 {
+    font-size: 24px;
+    padding-top: 65px;
+  }
+  .chapters-name-div-ar {
+    padding-top: 80px;
+  }
+  .chapters-name-div-ar h4 {
+    font-size: 19px;
+    padding-bottom: 24px;
+  }
+  .right-hs-ar {
+    padding: 24px;
+    gap: 10px;
+    overflow: auto;
+  }
+
+  .right-hs-ar button {
+    border-radius: 38px;
+    padding: 7px 34px;
+    font-size: 15px;
+  }
+  .right-below-ar {
+    padding: 18px 24px;
+  }
+  .chap-heading-ar {
+    font-size: 28px;
+    padding: 14px 8px;
+    border-radius: 42px;
+  }
+  .chat-message-btn-div-ar {
+    gap: 24px;
+    padding-top: 28px;
+  }
+  .chat-ar {
+    border-radius: 42px;
+    padding: 22px;
+    height: 64vh;
+  }
+
+  .user-chat-ar {
+    margin-bottom: 30px;
+  }
+
+  .user-chat-ar-div {
+    border-radius: 40px;
+    padding: 13px 16px;
+    font-size: 19px;
+    width: 70%;
+  }
+  .message-div-ar {
+    border-radius: 42px;
+    padding: 20px 74px 20px 20px;
+    font-size: 14px;
+  }
+
+  .voice-img {
+    width: 24px;
+  }
+  .voice-img-div {
+    gap: 10px;
+  }
+
+  .chat-send-btn-ar {
+    font-size: 22px;
+  }
+  .chat-blow-btn-ar {
+    padding: 7px 34px;
+    font-size: 15px;
+    border-radius: 48px;
+  }
+  .sample-book-sidebar-btns-ar {
+    gap: 24px;
+    margin-top: -22px;
+  }
+  .sample-book-sidebar-btns-ar button {
+    padding: 13px 0px;
+    font-size: 18px;
+    border-radius: 42px;
+  }
+  .preview-book-div-ar {
+    padding: 24px;
+  }
+  .preview-book-div-ar h6 {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+  .preview-book-detail-ar {
+    border-radius: 44px;
+    padding-top: 90px;
+    height: 88vh;
+  }
+  .preview-book-detail-ar::-webkit-scrollbar {
+    width: 50px; /* Width of the scrollbar */
+    border-radius: 50px;
+    background-color: #fff; /* Background of the scrollbar path */
+  }
+
+  .preview-book-detail-ar::-webkit-scrollbar-thumb {
+    border-radius: 50px; /* Roundness of the scroller */
+    background-color: #5d6d7e; /* Color of the scroller */
+  }
+
+  .preview-book-detail-ar::-webkit-scrollbar-thumb:hover {
+    background-color: #4a5867; /* Darker shade for hover effect */
+  }
+  .book-detail-div-ar {
+    width: 70%;
+    padding: 24px 33px 0 33px;
+  }
+  .cover-img-div {
+    width: 100% !important;
+    height: 350px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .book-detail-div-ar::-webkit-scrollbar {
+    width: 15px !important; /* Width of the scrollbar */
+    border-radius: 50px;
+  }
+  .book-detail-div-ar h1 {
+    font-size: 28px;
+  }
+  .book-content-ar {
+    padding-bottom: 45px;
+  }
+  .book-content-ar p {
+    font-size: 15px;
+    padding-bottom: 22px;
+  }
+  .visual-btn-ar {
+    width: 40%;
+    padding: 42px 0;
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .dashboard-inner-ar {
+    height: 100vh;
+  }
+  .sidebar-ar {
+    width: 32%;
+    padding: 26px;
+  }
+
+  /* Webkit scrollbar styling for browsers like Chrome, Safari */
+
+  .rightbar-ar {
+    width: 68%;
+  }
+  .siebar-top-div {
+    gap: 8px;
+  }
+  .head-btn-ar {
+    padding: 8px 0px;
+    font-size: 13px;
+    border-radius: 40px;
+  }
+  .sidebar-bottom-chapters-div-ar h3 {
+    font-size: 24px;
+    padding-top: 50px;
+    padding-bottom: 3px;
+  }
+  .sidebar-bottom-chapters-div-ar h5 {
+    font-size: 22px;
+    padding-top: 65px;
+  }
+  .chapters-name-div-ar {
+    padding-top: 70px;
+  }
+  .sample-book-divs-ar {
+    padding-left: 35px;
+  }
+  .chapters-name-div-ar h4 {
+    font-size: 16px;
+    padding-bottom: 22px;
+    text-indent: -32px;
+  }
+  .right-hs-ar {
+    padding: 22px;
+    gap: 12px;
+    overflow: auto;
+  }
+
+  .right-hs-ar button {
+    border-radius: 34px;
+    padding: 4px 22px;
+    font-size: 13px;
+  }
+  .right-below-ar {
+    padding: 16px 22px;
+  }
+  .chap-heading-ar {
+    font-size: 24px;
+    padding: 14px 8px;
+    border-radius: 38px;
+  }
+  .chat-message-btn-div-ar {
+    gap: 22px;
+    padding-top: 26px;
+  }
+  .chat-ar {
+    border-radius: 38px;
+    padding: 20px;
+    height: 66vh;
+  }
+  .user-chat-ar {
+    margin-bottom: 30px;
+  }
+
+  .user-chat-ar-div {
+    border-radius: 40px;
+    padding: 12px 14px;
+    font-size: 16px;
+    width: 70%;
+  }
+  .message-div-ar {
+    border-radius: 40px;
+    padding: 18px 70px 18px 18px;
+    font-size: 13px;
+  }
+
+  .voice-img {
+    width: 22px;
+  }
+  .voice-img-div {
+    gap: 10px;
+  }
+
+  .chat-send-btn-ar {
+    font-size: 20px;
+  }
+  .chat-blow-btn-ar {
+    padding: 7px 30px;
+    font-size: 14px;
+    border-radius: 44px;
+  }
+  .sample-book-sidebar-btns-ar {
+    gap: 22px;
+    margin-top: -24px;
+  }
+  .sample-book-sidebar-btns-ar button {
+    padding: 12px 0px;
+    font-size: 18px;
+    border-radius: 38px;
+  }
+  .preview-book-div-ar {
+    padding: 22px;
+  }
+  .preview-book-div-ar h6 {
+    font-size: 26px;
+    padding-bottom: 18px;
+  }
+  .preview-book-detail-ar {
+    border-radius: 40px;
+    padding-top: 80px;
+    height: 90vh;
+  }
+  .preview-book-detail-ar::-webkit-scrollbar {
+    width: 50px; /* Width of the scrollbar */
+    border-radius: 50px;
+    background-color: #fff; /* Background of the scrollbar path */
+  }
+
+  .preview-book-detail-ar::-webkit-scrollbar-thumb {
+    border-radius: 50px; /* Roundness of the scroller */
+    background-color: #5d6d7e; /* Color of the scroller */
+  }
+
+  .preview-book-detail-ar::-webkit-scrollbar-thumb:hover {
+    background-color: #4a5867; /* Darker shade for hover effect */
+  }
+  .book-detail-div-ar {
+    width: 80%;
+    padding: 22px 30px 0 30px;
+  }
+  .cover-img-div {
+    width: 100% !important;
+    height: 300px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .book-detail-div-ar::-webkit-scrollbar {
+    width: 10px !important; /* Width of the scrollbar */
+    border-radius: 50px;
+  }
+  .book-detail-div-ar h1 {
+    font-size: 26px;
+  }
+  .book-content-ar {
+    padding-bottom: 40px;
+  }
+  .book-content-ar p {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .visual-btn-ar {
+    width: 40%;
+    padding: 40px 0;
+    font-size: 26px;
+  }
+}
