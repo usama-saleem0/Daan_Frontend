@@ -1,0 +1,74 @@
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-content {
+    text-align: center;
+  }
+  
+  .question-text {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .answer-button, .save-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .answer-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .answer-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .save-button {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .save-button:hover {
+    background-color: #5a6268;
+  }
+
+
+  /* Hover styles for the primary "Answer" button */
+.answer-button{
+  padding: 20px 0px;
+}
+.answer-button:hover {
+  background-color: #D68910 !important; /* Darker shade of #F39C12 */
+}
+
+/* Hover styles for the secondary "Add for later" button */
+.draft-button{
+  padding: 20px 0px;
+}
+.draft-button:hover {
+  background-color: #FCF3CF !important; /* Light yellow background on hover */
+  border-color: #D68910 !important; /* Darker border on hover */
+}

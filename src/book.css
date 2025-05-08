@@ -1,0 +1,278 @@
+.leftPanel {
+    width: 60%;
+}
+
+
+.back--cover {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+}
+
+.back--cover button {
+    padding: 10px 30px;
+    color: #FFF;
+    font-family: Solway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 64px;
+    background: #C69BB0;
+    border: 1px solid #c69bb0;
+}
+
+.back--cover p {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+}
+
+.alignments {
+    display: flex;
+    gap: 20px;
+}
+.flex-remove{
+    display: block   !important;
+}
+.bookcoverdiv {
+    width: 41vh;
+    height: 50vh;
+    /* border: 3px solid #f39c12; */
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+
+.bookcoverdiv img {
+    width: 100%;
+    height: 66% ;
+    object-fit: cover !important;
+}
+
+.bookcoverdiv svg {
+    width: 24px;
+}
+
+.book-cover-para-logo {
+    width: 10%;
+    padding: 10px 0px;
+}
+
+.book-cover-para-logo img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+section.Emailt1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-Emailt1 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.Emailt1-logo {
+    width: 100px;
+}
+
+.Emailt1-logo img {
+    width: 100%;
+}
+
+.Emailt1-heading h2 {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "Solway", serif;
+}
+
+.Emailt1-heading p {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+    width: 90%;
+    font-family: "Solway", serif;
+    margin: 0px;
+}
+
+.Emailt1-heading {
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.Emailt1-group-box {
+    width: 100%;
+}
+
+.Emailt1-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.Emailt1-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000;
+    background: transparent;
+    border-radius: 40px;
+}
+
+.Emailt1-btn {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.Emailt1-btn button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: rgb(245, 211, 157);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Emailt1-link {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.Emailt1-link p {
+    font-size: 16px;
+    cursor: pointer;
+}
+.Emailt1-link p:last-child {
+ text-transform: uppercase;
+}
+.Emailt1-link p span {
+    font-weight: 500;
+}
+.deleteimg {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+img.coverimage.img-thumbnail {
+    width: 100%;
+    height: 100%;
+    max-width: 40vh;
+    min-width: 40vh;
+    max-height: 40vh;
+    min-height: 40vh;
+}
+
+img.img-thumbnail {
+    cursor: pointer;
+}
+
+img.img-thumbnail:hover {
+    scale: 1.1;
+    transition: 0.6s;
+}
+@media screen and (max-width: 1440px) {
+    .Emailt1-heading p {
+        font-size: 15px;
+    }
+    
+    .Emailt1-heading h2 {
+        font-size: 35px;
+    }
+    
+    .Emailt1-logo {
+        width: 70px;
+    }
+    
+    .Emailt1-heading {
+        padding: 24px 0px;
+    }
+    
+    .Emailt1-btn {
+        padding-top: 15px;
+    }
+    
+    .Emailt1-btn button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .Emailt1-group input {
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    .Emailt1-link p {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-Emailt1 {
+        width: 60%;
+    }
+    
+    .Emailt1-group {
+        padding-top: 0px;
+    }
+    
+    .Emailt1-heading h2 {
+        font-size: 32px;
+    }
+    
+    .Emailt1-heading p {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .main-Emailt1 {width: 90%;}
+
+.Emailt1-logo {
+    width: 60px;
+}
+
+.Emailt1-heading h2 {
+    font-size: 26px;
+}
+}

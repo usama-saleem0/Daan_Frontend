@@ -1,0 +1,164 @@
+/* A5 Container */
+.a5-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* padding: 20px; */
+  /* background-color: #f9f9f9; */
+}
+
+/* A5 Page */
+.a5-page {
+  /* overflow-y: scroll; */
+  width: 188mm;
+  height: 100%;
+  min-height: 210mm;
+  padding: 80px 40px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  page-break-after: always; /* Ensure each page is separate when printing */
+
+  /* Hide scrollbar for Chrome, Safari and Edge */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari and Edge */
+.a5-page::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Mock Heading */
+.mock-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Mock Subheading */
+.mock-subheading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Message Container */
+.message-container {
+  margin-bottom: 20px;
+}
+
+/* Text Content */
+.text-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Image Content */
+.image-content {
+  margin-bottom: 10px;
+}
+
+.message-image {
+  max-width: 100%;
+  /* height: 40vh; */
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Video Content */
+.video-content {
+  margin-bottom: 10px;
+}
+
+.video-wrapper a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.video-wrapper a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.a5-page2 {
+   /* Center content vertically */
+  width: 188mm;
+  height: 250mm;
+  padding: 50px;
+  background: linear-gradient(to bottom, #fcfcfc, #f5f5f5); /* Soft gradient */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  page-break-after: always;
+  font-family: "Merriweather", serif; /* Elegant book-like font */
+  font-size: 20px;
+  line-height: 1.8;
+  color: #333;
+  text-align: center;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+/* Stylish heading */
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  font-family: "Playfair Display", serif;
+}
+
+/* Subtitle styling */
+.page-subtitle {
+  font-size: 18px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Main text styling */
+.page-content {
+  max-width: 80%;
+  text-indent: 0;
+  white-space: pre-line;
+}
+
+/* Decorative line at the bottom */
+.page-footer {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  font-style: italic;
+}

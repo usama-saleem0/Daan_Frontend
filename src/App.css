@@ -1,0 +1,1280 @@
+@import url("https://fonts.googleapis.com/css2?family=Doppio+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Solway:wght@300;400;500;700;800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Doppio+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Solway:wght@300;400;500;700;800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* From Uiverse.io by KSAplay */
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.preview-video {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.loading-text {
+  color: white;
+  font-size: 14pt;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.dot {
+  margin-left: 3px;
+  animation: blink 1.5s infinite;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.loading-bar-background {
+  --height: 30px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 200px;
+  height: var(--height);
+  background-color: #212121
+    /*change this*/
+  ;
+  box-shadow: #0c0c0c -2px 2px 4px 0px inset;
+  border-radius: calc(var(--height) / 2);
+}
+
+.loading-bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  --height: 20px;
+  width: 0%;
+  height: var(--height);
+  overflow: hidden;
+  background: rgb(222, 74, 15);
+  background: linear-gradient(0deg,
+      rgba(222, 74, 15, 1) 0%,
+      rgba(249, 199, 79, 1) 100%);
+  border-radius: calc(var(--height) / 2);
+  animation: loading 4s ease-out infinite;
+}
+
+.white-bars-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.white-bar {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(-45deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 70%);
+  width: 10px;
+  height: 45px;
+  opacity: 0.3;
+  rotate: 45deg;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+
+  80% {
+    width: 100%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+
+.stepper-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5e5c7;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  height: 60px;
+}
+
+.step.active {
+  background-image: url(/src/assets/Stepsbg.png);
+
+}
+
+.step {
+  background-image: url(/src/assets/back.png);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  gap: 5px;
+  max-width: 150px;
+  min-width: 150px;
+  height: 100%;
+  background-color: #f5e5c7;
+  position: relative;
+  clip-path: polygon(10% 0,
+      /* Top-left cut */
+      90% 0,
+      /* Top-right cut */
+      100% 50%,
+      /* Right middle point */
+      90% 100%,
+      /* Bottom-right cut */
+      0% 100%,
+      /* Bottom-left cut */
+      0 0px
+      /* Left middle point */
+    );
+  justify-content: center;
+  padding: 0px 0px 0px 15px;
+
+
+}
+
+span.step-index {
+  font-family: Solway;
+  font-size: 8px;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+  background: #000;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  margin: 0px;
+}
+
+.step-label {
+  font-family: Solway;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  color: #000000;
+  margin: 0px;
+
+}
+
+.reviewbook--bottom {
+  width: 100%;
+  padding: 70px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.reviewbybook {
+  width: 100%;
+  padding: 40px 0px ;
+  background: #FFFAF0;
+}
+
+.reviewbook--bottom--top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.reviewbook--bottom--1 {
+  width: 80%;
+}
+
+.reviewbook--bottom--top h3 {
+  font-family: Solway;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+  color: #000000;
+  width: 84%;
+}
+
+.reviewbook--bottom--top span {
+  width: 80%;
+}
+
+.reviewbook--bottom--top button {
+  background: #C69BB0;
+  padding: 8px 16px 8px 16px;
+  border-radius: 50px;
+  font-family: Solway;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  width: 20%;
+  color: #FFFFFF;
+}
+
+.reviewbook--bottom--2 {
+  width: 20%;
+}
+
+.reviewbook--bottom--top p {
+  margin: 0;
+  font-family: Solway;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.reviewbook--bottom--1 p {
+  font-family: Solway;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.4px;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.reviewbook--bottom--top-2 {
+  background: #FAD7A0;
+  padding: 19px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.reviewbook--bottom--top-2 h5 {
+  color: #000000;
+  margin: 0;
+  font-family: Solway;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.bottom--forget {
+  background: #FAD7A0;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.bottom--forget h6 {
+  font-family: Solway;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+
+.bottom--forget p {
+  font-family: Solway;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.6px;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.bottom--forget button {
+  font-family: Solway;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  background: #C69BB0;
+  padding: 6px 23px;
+  border-radius: 50px;
+  color: #FFFFFF;
+}
+
+.basit--chat {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 52px 0px 27px 0px;
+}
+
+.basit--chat span {
+  text-align: left;
+  width: 56%;
+}
+
+.basit--chat span h3 {
+  font-family: Solway;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+  color: #000000;
+}
+
+.basit--chat--allbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.more-box-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 2%;
+
+}
+
+.more-box-list p {
+  margin: 0px;
+  font-family: "Solway";
+}
+
+.two-button-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 65%;
+}
+
+.two-button-box button {
+  padding: 10px 30px;
+  color: #FFF;
+  font-family: Solway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  justify-content: space-between;
+  border-radius: 64px;
+  background: #C69BB0;
+  border: 1px solid #c69bb0;
+}
+
+.more-change-box {
+  width: 100%;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.more-change-box p {
+  color: #000;
+  text-align: center;
+  font-family: Solway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  margin: 0px;
+}
+
+
+.icon-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.icon-box svg {
+  width: 80px;
+}
+
+.basit--chat--allbtn button {
+  color: #FFFFFF;
+  font-family: Solway;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  padding: 12px 59px;
+  background: #C69BB0;
+  border-radius: 50px;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .................. *//* .................. *//* .................. *//* .................. *//* .................. *//* .................. */
+/* .................. *//* .................. *//* .................. *//* .................. *//* .................. *//* .................. */
+/* .................. *//* .................. *//* .................. *//* .................. *//* .................. *//* .................. */
+/* .................. *//* .................. *//* .................. *//* .................. *//* .................. *//* .................. */
+/* .................. *//* .................. *//* .................. *//* .................. *//* .................. *//* .................. */
+
+
+.tree ul {
+  padding-top: 20px;
+  position: relative;
+  display: contents;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.tree li {
+  display: table-cell;
+  vertical-align: top;
+  list-style: none;
+  position: relative;
+  padding: 20px 5px 0 5px;
+}
+
+.tree li::before, 
+.tree li::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  width: 50%;
+  height: 20px;
+  border-top: 2px solid #CCC;
+}
+
+.tree li::before {
+  right: 50%;
+  border-right: 2px solid #CCC;
+}
+
+.tree li::after {
+  left: 50%;
+  border-left: 0px solid #CCC;
+}
+
+.tree li:only-child::before, 
+.tree li:only-child::after {
+  display: none;
+}
+
+.tree li:only-child {
+  padding-top: 0;
+}
+
+.tree li:first-child::before, 
+.tree li:last-child::after {
+  border: 0 none;
+}
+
+.tree li:last-child::before {
+  border-right: 2px solid #CCC;
+  border-radius: 0 5px 0 0;
+}
+
+.tree li:first-child::after {
+  border-left: 2px solid #CCC;
+  border-radius: 5px 0 0 0;
+}
+.Discount-p {
+  width: 21%;
+}
+
+.dashboard-inner-ar {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.box {
+  border: 2px solid #CCC;
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  min-width: 85px;
+  font-size: 12px;
+  height: 60px;
+}
+
+
+.tree {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: -1px;
+}
+
+li.no-top1 {}
+
+li.no-top1::before {
+    width: 0%;
+}
+
+ul {}
+
+li.no-top1::after {
+    width: 0% !IMPORTANT;
+    height: 0px;
+}
+
+li.no-top2 {}
+
+li.no-top2::before {
+    width: 5%;
+}
+
+li.no-top2::after {
+    width: 6%;
+}
+
+.box.tree-head {
+    border: 1px solid #010101;
+    font-weight: bold;
+}
+
+li.no-top1 .box.tree-head {
+    margin-bottom: 20px;
+}
+
+.box.tree-head {
+    border: 1px solid #010101;
+    font-weight: bold;
+}
+
+li.no-top1 .box.tree-head {
+    margin-bottom: 20px;
+}
+
+
+/* .................. *//* .................. *//* .................. *//* .................. *//* .................. *//* .................. */
+/* .................. *//* .................. *//* .................. *//* .................. *//* .................. *//* .................. */
+/* .................. *//* .................. *//* .................. *//* .................. *//* .................. *//* .................. */
+/* .................. *//* .................. *//* .................. *//* .................. *//* .................. *//* .................. */
+/* .................. *//* .................. *//* .................. *//* .................. *//* .................. *//* .................. */
+
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.tree ul {
+  padding-top: 20px;
+  position: relative;
+  display: contents;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.tree li {
+  display: table-cell;
+  vertical-align: top;
+  list-style: none;
+  position: relative;
+  padding: 20px 5px 0 5px;
+}
+
+.tree li::before, 
+.tree li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 20px;
+  border-top: 1px solid #CCC;
+}
+
+.tree li::before {
+  right: 50%;
+  border-right: 1px solid #CCC;
+}
+
+.tree li::after {
+  left: 50%;
+  border-left: 1px solid #CCC;
+}
+
+.tree li:only-child::before, 
+.tree li:only-child::after {
+  display: none;
+}
+
+.tree li:only-child {
+  padding-top: 0;
+}
+
+.tree li:first-child::before, 
+.tree li:last-child::after {
+  border: 0 none;
+}
+
+.tree li:last-child::before {
+  border-right: 1px solid #CCC;
+  border-radius: 0 5px 0 0;
+}
+
+.tree li:first-child::after {
+  border-left: 1px solid #CCC;
+  border-radius: 5px 0 0 0;
+}
+
+.box {
+  border: 1px solid #CCC;
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  min-width: 120px;
+  font-size: 14px;
+}
+
+
+.tree {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: -1px;
+}
+
+li.no-top1 {}
+
+li.no-top1::before {
+    width: 0%;
+}
+
+ul {}
+
+li.no-top1::after {
+    width: 0% !IMPORTANT;
+    top: 43%;
+}
+
+li.no-top2 {}
+
+li.no-top2::before {
+    width: 5%;
+}
+
+li.no-top2::after {
+    width: 6%;
+}
+
+.box.tree-head {
+    border: 1px solid #010101;
+    font-weight: bold;
+}
+
+li.no-top1 .box.tree-head {
+    margin-bottom: 20px;
+} */
+
+
+
+
+
+@media screen and (max-width: 1600px) {
+
+
+
+
+  .main-site-box h1 {
+    font-size: 45px;
+  }
+
+  .main-site-box p {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  .step {
+    height: 60px;
+  }
+
+
+
+  button.postion-div-box {
+    right: 275px;
+    bottom: 14%;
+    margin: 0px !important;
+  }
+
+  .Memory-box p {
+    padding-bottom: 85px;
+  }
+
+  .Choose-Template-box h2 {
+    font-size: 35px;
+  }
+
+}
+
+
+@media screen and (max-width: 1440px) {
+
+  .main-site-box h1 {
+    font-size: 38px;
+  }
+
+  button.postion-div-box {
+    right: 15%;
+    bottom: 22%;
+    padding: 10px 40px !important;
+    border-radius: 5px !important;
+  }
+
+  .Memory-box h2 {
+    font-size: 18px;
+  }
+
+  .Memory-box p {
+    padding-bottom: 65px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  button.postion-div-box {
+    right: 16%;
+    bottom: 35%;
+  }
+
+  span.step-index {
+    font-size: 8px;
+    height: 18px;
+    width: 18px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step {
+    gap: 5px;
+    height: 44px;
+  }
+
+  .main-site-box h1 {
+    font-size: 32px;
+  }
+
+  .two-button-box button {
+    font-size: 14px;
+    padding: 8px 24px;
+  }
+
+  .main-site-box {
+    padding-bottom: 25px;
+  }
+
+  .Memory-box p {
+    padding-bottom: 45px;
+  }
+
+  .Memory-box h2 {
+    font-size: 16px;
+    margin: 0px;
+  }
+
+  .sample-book-sidebar-btns-ar button {
+    border-radius: 5px !important;
+  }
+
+  .Memory-box {
+    border-radius: 5px !important;
+  }
+
+  .Choose-Template-box h2 {
+    font-size: 28px;
+    margin: 0px;
+  }
+
+  .animated-button {
+    padding: 10px 25px;
+  }
+
+  .main-row-box {
+    gap: 10px;
+    padding-top: 40px;
+  }
+
+  .new-div-box {
+    height: 28vh;
+  }
+
+  .new-div-box img {
+    object-fit: cover;
+  }
+
+  .bookcoverdiv {
+    width: 85%;
+    height: 45vh;
+  }
+
+  img.coverimage.img-thumbnail {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    max-height: 100% !important;
+  }
+
+  .rightpanel {
+    width: 45%;
+    padding-top: 35px;
+  }
+
+  .alignments {
+    gap: 0px;
+  }
+
+  .leftPanel {
+    width: 59%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .stepper-container {
+    overflow-y: scroll;
+  }
+
+  .step {
+    width: 100%;
+    max-width: 225px;
+    min-width: 225px;
+    height: 55px;
+  }
+
+  .reviewbybook {
+    padding: 40px 0px;
+  }
+
+  .main-site-box h1 {
+    font-size: 28px;
+  }
+
+  .main-site-box p {
+    padding-top: 8px;
+    font-size: 16px;
+  }
+
+  .dashboard-inner-ar {
+    padding-top: 40px;
+  }
+
+  .rightbar-ar {
+    width: 100% !important;
+  }
+
+  button.postion-div-box {
+    bottom: 0px;
+    left: 57px;
+    width: 86%;
+  }
+
+  .rightbar-ar {
+    overflow: hidden;
+    height: calc(100vh - 10px);
+  }
+
+  .preview-book-div-ar {
+    padding: 20px 20px 75px 32px;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+  .preview-book-div-ar {
+    padding: 20px 0px 75px 0px;
+  }
+
+  .dashboard-inner-ar {
+    padding-top: 20px;
+  }
+
+  button.postion-div-box {
+    left: 30px;
+  }
+
+  .alignments {
+    flex-direction: column;
+  }
+
+  .leftPanel {
+    width: 100%;
+  }
+
+  .rightpanel {
+    width: 100%;
+  }
+
+  .new-div-box {
+    width: 48%;
+  }
+
+  .main-row-box {
+    gap: 20px 0px;
+    justify-content: space-between;
+  }
+
+  .new-div-box img {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0px !important;
+  }
+
+  .Choose-Template-box h2 {
+    font-size: 18px;
+    margin: 0px;
+  }
+
+
+  .main-site-box h1 {
+    font-size: 20px;
+}
+
+.step {
+    max-width: 175px;
+    min-width: 175px;
+    height: 40px;
+}
+
+.a5-page {
+    padding: 40px 20px;
+}
+
+.mock-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* treee-box-css-code-treee-box-css-code-treee-box-css-code-treee-box-css-code
+treee-box-css-code-treee-box-css-code-treee-box-css-code-treee-box-css-code
+treee-box-css-code-treee-box-css-code-treee-box-css-code-treee-box-css-code
+treee-box-css-code-treee-box-css-code-treee-box-css-code-treee-box-css-code */
+
+
+
+
+
+
+
+/* 
+.tree {
+    overflow: auto;
+    max-width: 350px;
+}
+
+.tree li::before {border: none !important;display: none;}
+
+
+
+li.no-top1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.tree li::after {
+    border: none !important;
+}
+
+.tree li {
+    padding: 0px 5px 0 5px;
+}
+
+li.no-top2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.box {
+    min-width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.tree ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    width: 100%;
+    gap: 10px;
+} */
+
+.box {
+  height: 40px;
+}
+
+
+.tree ul {
+  position: relative;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.tree li {
+  list-style-type: none;
+  position: relative;
+  padding: 10px 5px 0 5px;
+  text-align: center;
+}
+
+/* Connector lines */
+.tree li::before, .tree li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 1px solid #ccc;
+  width: 50%;
+  height: 20px;
+  z-index: -1;
+}
+
+.tree li::before {
+  right: 42%;
+  border-right: 1px solid #ccc;
+}
+
+.tree li::after {
+  left: 50%;
+  border-left: 1px solid #ccc;
+}
+
+/* Remove lines for single nodes */
+.tree li:only-child::before, .tree li:only-child::after {
+  /* display: none; */
+}
+
+.tree li:only-child {
+  padding-top: 0;
+}
+
+/* Vertical line from parent to children */
+.tree li > ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 1px solid #ccc;
+  height: 20px;
+  z-index: -1;
+}
+
+/* Node style */
+.tree a {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  background: white;
+  color: #333;
+  font-family: sans-serif;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+/* treee-box-css-code-treee-box-css-code-treee-box-css-code-treee-box-css-code
+treee-box-css-code-treee-box-css-code-treee-box-css-code-treee-box-css-code
+treee-box-css-code-treee-box-css-code-treee-box-css-code-treee-box-css-code
+treee-box-css-code-treee-box-css-code-treee-box-css-code-treee-box-css-code */
+
+
+
+
+
+.new-layout-btn-box button {
+    width: 40%;
+}
+.a5-page {
+  width: 100mm;
+}
+.new-layout-box h2 {
+    font-size: 14px;
+}
+
+.more-box-list p {
+    font-size: 13px;
+}
+
+.modal-dialog.modal-lg.modal-dialog-centered {
+    width: 100%;
+    max-width: 95%;
+}
+
+.a5-page2 {
+    width: 100mm;
+    padding: 40px 20px;
+}
+
+.page-title {
+    font-size: 18px;
+}
+
+.a5-page2 ul {
+    padding: 0px;
+}
+
+.Information-Book-tital h2 {
+    font-size: 16px;
+}
+
+.Information-Book-tital p {
+    font-size: 12px;
+}
+
+.Information-box {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Information-Book-no-box span {
+    padding: 5px;
+    gap: 20px;
+}
+
+.Information-Book-no-box p {
+    font-size: 16px;
+}
+
+.Information-Book-no-box input {
+    width: 15px;
+    height: 15px;
+}
+
+.Shipping-box-1 h2 {
+    font-size: 20px;
+}
+
+.Information-group label {
+    font-size: 16px;
+}
+
+.Information-group input {
+    padding: 10px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.Information-group {
+    width: 100%;
+}
+
+.Information-from-box {
+    gap: 10px 0px;
+}
+
+
+.chap-heading-ar span {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+
+.add-back-batn {
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: 2px;
+}
+
+.dynamic--textarea.selected {
+  padding: 0px;
+  border-color: transparent;
+  box-shadow: none;
+  gap: 10px;
+}
+
+textarea.message-div-ar {
+  font-size: 12px;
+}
+
+.Qustionchat-btn-box {
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Qustionchat-btn-box button {
+  width: 48%;
+}
+
+.next-per-box button {
+  width: 30% !important;
+  font-size: 12px;
+}
+}

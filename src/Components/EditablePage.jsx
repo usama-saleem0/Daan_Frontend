@@ -23,20 +23,24 @@ const FontCustomizer = () => {
     }));
   };
 
+  
   return (
     <div>
       <div>
-        <label>Font Family:</label>
+        <label>Lettertypefamilie:</label>
         <select
           onChange={(e) => updateStyle("fontFamily", e.target.value)}
         >
-          <option value="Arial">Arial</option>
-          <option value="Times New Roman">Times New Roman</option>
-          <option value="Courier New">Courier New</option>
+          <option value="Arial">Ariaal
+          </option>
+          <option value="Times New Roman" > Times New Roman</option>
+          <option value="Courier New">
+          Koerier Nieuw</option>
           <option value="Verdana">Verdana</option>
         </select>
 
-        <label>Font Size:</label>
+        <label>
+        Lettergrootte:</label>
         <input
           type="number"
           value={styles.fontSize}
@@ -45,10 +49,10 @@ const FontCustomizer = () => {
           }
         />
 
-        <button onClick={() => toggleStyle("fontWeight")}>Bold</button>
-        <button onClick={() => toggleStyle("fontStyle")}>Italic</button>
+        <button onClick={() => toggleStyle("fontWeight")}>Vetgedrukt</button>
+        <button onClick={() => toggleStyle("fontStyle")}>Cursief</button>
         <button onClick={() => toggleStyle("textDecoration")}>
-          Underline
+        Onderstrepen
         </button>
       </div>
 
@@ -61,7 +65,8 @@ const FontCustomizer = () => {
           ...styles,
         }}
       >
-        This is editable content. Change its style!
+   
+Dit is bewerkbare inhoud. Verander zijn stijl!
       </div>
     </div>
   );

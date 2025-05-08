@@ -171,8 +171,10 @@ const PDFWithImage = () => {
 
   return (
     <div>
-      <h1>Generate PDF with Image and Text</h1>
-      <button onClick={generatePDF}>Generate PDF</button>
+      <h1>
+      Genereer PDF met afbeelding en tekst</h1>
+      <button onClick={generatePDF}>
+      PDF genereren</button>
     </div>
   );
 };

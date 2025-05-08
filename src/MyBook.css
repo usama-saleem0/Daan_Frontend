@@ -1,0 +1,250 @@
+/* .book-container {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+} */
+
+.blank-page {
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Or any other color */
+}
+.book-container {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  align-items: center;
+  min-height: 30vh;
+  max-height: 85vh;
+  overflow: hidden;
+  padding-top: 30px;
+}
+.album-web {
+  background: white;
+  text-align: center;
+  color: #fff;
+}
+
+.page {
+  background: white;
+  color: black;
+  padding: 40px; /* A4 page margins */
+  box-sizing: border-box;
+  box-shadow: 0 1.5em 3em -1em rgb(70, 69, 69);
+  overflow: hidden; /* Ensure content does not overflow */
+}
+
+.cover {
+  background-color: #FFFAF0; /* White background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* box-shadow: rgba(243, 156, 18, 0.8) 8px 8px, 
+            rgba(243, 156, 18, 0.6) 16px 16px, 
+            rgba(243, 156, 18, 0.4) 24px 24px, 
+            rgba(243, 156, 18, 0.2) 32px 32px, 
+            rgba(243, 156, 18, 0.1) 40px 40px; */
+
+}
+
+.cover-content {
+    position: relative;
+    width: 75%;
+    height: 70%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    transform: skewX(6deg);
+    border-left: 30px solid #000;
+    border-bottom: 30px solid #000;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* .cover-content::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  height: 100%;
+  width: 40px;
+  background-image: var(--sideCoverImage);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: skewX(0deg);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+} */
+
+.cover .title {
+  width: 100%;
+  z-index: 2; /* Ensure title is above the image */
+  text-align: center;
+  color: #000; /* Black text */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.cover .title h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.cover .cover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: 1; /* Ensure image is behind the title */
+}
+
+.chapter-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border: 1px solid red;
+}
+
+.chapter-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.message-content p {
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #333;
+  overflow-wrap: break-word; /* Ensure text wraps */
+  word-wrap: break-word; /* Ensure text wraps */
+  hyphens: auto; /* Hyphenate words if necessary */
+}
+
+.content-page {
+  padding: 40px;
+}
+
+.content-page h3 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Optional: Add a subtle background pattern to pages */
+.page {
+  background: linear-gradient(
+      to bottom,
+      transparent 95%,
+      rgba(0, 0, 0, 0.05) 95%
+    ),
+    white;
+}
+.image-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Optional: Add a background color */
+}
+
+.image-page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire page */
+}
+
+
+.page-number {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+
+
+.index-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  /* Remove max-width and margin to align content to the left */
+  text-align: left; /* Ensure text inside is aligned to the left */
+}
+
+.index-title {
+  font-size: 2.5rem;
+  text-align: center; /* Keep the title centered if desired */
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.index-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align children to the left */
+}
+
+.chapter-entry {
+  margin-bottom: 0;
+  page-break-inside: avoid;
+  width: 100%; /* Ensure each entry takes full width */
+}
+
+.chapter-title-index {
+  margin-bottom: 30px !important;
+  display: block;
+  font-size: 1.2rem;
+  color: #34495e;
+  text-decoration: none;
+  text-align: left; /* Ensure text is aligned to the left */
+}
+
+.chapter-title-index:hover {
+  text-decoration: underline;
+  color: #2980b9;
+}
+
+.decorative-line {
+  height: 2px;
+  background-color: #bdc3c7;
+}
+
+/* For multi-column layout on larger screens */
+@media (min-width: 768px) {
+  .index-content {
+    column-count: 2; /* Two columns for larger screens */
+  }
+}
+
+/* Print-specific styles */
+@media print {
+  .index-content {
+    column-count: 1; /* Single column for printing */
+  }
+
+  .chapter-entry {
+    page-break-inside: avoid; /* Ensure chapters don't break across pages */
+  }
+}

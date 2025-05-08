@@ -1,22 +1,41 @@
 import React, { useState } from "react";
-import Sidebar from "../components/Sidebar";
-import Chat from "../components/Chat";
-import Chat1 from "../components/Chat1";
+import Sidebar from "../Components/Sidebar";
+import Chat from "../Components/Chat";
+import Chat1 from "../Components/Chat1";
 import Chapters from "../Chapters";
+import { useSelector } from "react-redux";
+import Header from "../Components/Header";
+import { Link } from "react-router-dom";
+
 
 const Dashboard = () => {
   const [first, setfirst] = useState("");
 
-  const Data= Chapters
+  const Data = Chapters;
 
-console.log(Data,"CHAp")
+  const ChapterNumber = useSelector(
+    (state) => state.questionCounter.changeChapter
+  );
+
+  const chapterKey = `Chapter${ChapterNumber}`;
+
+  console.log(Data, "CHAp");
   return (
-    <section className="dashboard-section-ar">
-      <div className="dashboard-inner-ar">
-        <Sidebar Questions={Data}/>
-        <Chat1  Data={Data?.Chapter1}/>
-      </div>
-    </section>
+    <>
+      <Header />
+      <section className="dashboard-section-ar">
+        <div className="container-ar">
+          {" "}
+          
+        
+          <div className="dashboard-inner-ar">
+            <Chat1 Data={Data?.[chapterKey]} />
+
+
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
